@@ -9,7 +9,7 @@ html{
 }
 .main{
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, auto);
     row-gap: 10px;
 }
 
@@ -26,10 +26,9 @@ h2{
 }
 
 .content{
+    align-self:center;
+    justify-self: center;
     display: grid;
-    align-items: center;
-    justify-items: center;
-    grid-row: auto/15;
     margin: 20px;
 }
 
@@ -88,7 +87,7 @@ h2{
     background: #fff;
     padding: 20px;
     border-radius: 5px;
-    height: 40vh;
+    min-height:40vh;
     display: grid;
 } 
 
